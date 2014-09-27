@@ -1,0 +1,12 @@
+#!/bin/sh
+@echo off
+REM java -cp "c:\users\barry\documents\gcd\2013\BSCH-DS-FT-January\rmi-test";"/home/neal/Documents/Distributed Systems/RMI Tutorial/compute.jar": ^
+REM	-Djava.rmi.server.codebase="/home/neal/Documents/Distributed Systems/RMI Tutorial/compute.jar" ^
+REM	-Djava.rmi.server.hostname=localhost ^
+REM	-Djava.security.policy=server.policy ^
+REM	engine.ComputeEngine
+
+REM testing to get server running fails with access denied
+REM java engine.ComputeEngine
+
+java -Djava.rmi.server.hostname=localhost -Djava.security.policy=server.policy engine.ComputeEngine
